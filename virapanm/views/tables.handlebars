@@ -1,0 +1,22 @@
+<h1>{{requestType}} Request Received</h1>
+<table border='1'>
+  <caption>URL Parameters</caption>
+  {{#each dataList1}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.value}}</td>
+    </tr>
+  {{/each}}
+</table>
+
+{{#if showTable}}
+<table border="1">
+  <caption>Post Body Parameters</caption>
+  {{#each dataList2}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.value}}</td>
+    </tr>
+  {{/each}}
+</table>
+{{/if}}
